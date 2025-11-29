@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GDG PUP Student Portfolio</title>
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Google+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GDG PUP Student Portfolio</title>
-  <!-- Import Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Google+Sans:wght@400;500;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-  <!-- 
+  <body>
+    <!-- 
       TODO: Live Coding Session
       
       We will build the following sections:
@@ -26,56 +26,133 @@
       5. Footer
     -->
 
-  <!-- Header Section -->
-  <header>
-    <img class="corner-img left" src="assets/SPARKYCHIBI a.png"> <img />
-    <img class="corner-img right" src="assets/SPARKYCHIBI.png"> <img />
+    <!-- Header Section -->
+    <header>
+      <img class="corner-img left" src="assets/SPARKYCHIBI a.png" /> <img />
+      <img class="corner-img right" src="assets/SPARKYCHIBI.png" /> <img />
 
-    <h1>
-      Randy Sparky Lorenzo
-    </h1>
-    <p>
-      Sparky Student | Web Developer |
-      <span style="color: yellow">Sparky Fan</span>
-    </p>
+      <h1>Randy Sparky Lorenzo</h1>
+      <p>
+        Sparky Student | Web Developer |
+        <span style="color: yellow">Sparky Fan</span>
+      </p>
 
-    <div class="social-links">
-      <a href="https://www.facebook.com/rhandie.sales.1/" target="_blank">📧 Email</a>
-      <a href="https://www.facebook.com/rhandie.sales.1/" target="_blank">💼 LinkedIn</a>
-      <a href="https://www.facebook.com/rhandie.sales.1/" target="_blank">🐙 GitHub</a>
-      <a href="https://www.facebook.com/rhandie.sales.1/" target="_blank">🌐 GDG Profile</a>
+      <div class="social-links">
+        <a href="https://www.facebook.com/rhandie.sales.1/" target="_blank"
+          >📧 Email</a
+        >
+        <a href="https://www.facebook.com/rhandie.sales.1/" target="_blank"
+          >💼 LinkedIn</a
+        >
+        <a href="https://www.facebook.com/rhandie.sales.1/" target="_blank"
+          >🐙 GitHub</a
+        >
+        <a href="https://www.facebook.com/rhandie.sales.1/" target="_blank"
+          >🌐 GDG Profile</a
+        >
+      </div>
+
+      <!-- Code goes here -->
+    </header>
+
+    <div class="container">
+      <!-- About Section -->
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="assets/sparky.png" alt="Hello World" />
+          </div>
+          <div class="about-text">
+            <p>
+              <strong>Mabuhay!</strong> I'm a Sparky Student at
+              <strong>PUP</strong> and a proud member of
+              <strong>Google Developer Groups on Campus PUP</strong>. I
+              Specialize in building scalable web applications and exploring
+              cloud technologies
+            </p>
+            <br />
+            <p>
+              Driven by the <em>Iskolar ng Bayan</em> spirit, I aim to use
+              technology to solve community problems.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills-container">
+        <h2>My Tech Stack</h2>
+        <div class="skills-content">
+          <div class="skill-item">
+            <h3>💻 Frontend</h3>
+            <p>HTML5, CSS3, JS, React.js, Tailwind</p>
+          </div>
+
+          <div class="skill-item">
+            <h3>🎨 UI Design</h3>
+            <p>Figma, material Design 3, Adobe XD</p>
+          </div>
+
+          <div class="skill-item">
+            <h3>⚡ Backend</h3>
+            <p>Node.js, Express.js</p>
+          </div>
+
+          <div class="skill-item">
+            <h3>🔧 Tools</h3>
+            <p>Git, VS Code</p>
+          </div>
+
+          <div class="skill-item">
+            <h3>☁️ Cloud</h3>
+            <p>Google Cloud Platform (GCP)</p>
+          </div>
+
+          <div class="skill-item">
+            <h3>🤖 AI</h3>
+            <p>Gemini, ChatGPT, Claude</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects-container">
+        <h2>Featured Projects</h2>
+        <div class="projects-content">
+          <div class="project-card">
+            <div class="completed project-status">Deployed</div>
+            <h3>🌐 GDG ID Platform</h3>
+            <p>
+              A web app for retrieving and generating GDG ID for GDG PUP
+              members.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <div class="in-progress project-status">In-progress</div>
+            <h3>📝 GDG Next Website</h3>
+            <p>
+              An exciting future project for the GDG PUP community. Stay Tune!
+            </p>
+          </div>
+
+          <div class="project-card">
+            <div class="completed project-status">Hackathon</div>
+            <h3>🎮 Sparkfest 20XX</h3>
+            <p>An engaging website for the Sparkfest 20XX hackathon.</p>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <!-- Code goes here -->
-  </header>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 Randy Sparky Lorenzo. GDG on Campus PUP</p>
+      <p>Made with HTML and CSS</p>
+    </footer>
 
-  <div class="container">
-    <!-- About Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="about-content">
-        <div class="about-image">
-          <img src="assets/sparky.png" alt="Hello World" />
-        </div>
-        <div class="about-text">
-          <p><strong>Mabuhay!</strong> I'm a Sparky Student at <strong>PUP</strong> and a proud member of <strong>Google
-              Developer Groups on
-              Campus PUP</strong>. I
-            Specialize
-            in building scalable web applications and exploring cloud technologies</p>
-          <br>
-          <p>Driven by the <em>Iskolar ng Bayan</em> spirit, I aim to use technology to solve community problems. </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-
-    <!-- Projects Section -->
-
-  </div>
-
-  <!-- Footer -->
-</body>
-
+      <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">↑</a>
+  </body>
 </html>
