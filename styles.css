@@ -1,0 +1,212 @@
+/* GDG / Google Color Variables */
+/*
+  On this part, we define color variables based on Google's branding colors.
+
+  These color variables can then be reused throughout the entire CSS file without having to type the color code everytime we want to use them. 
+
+  Another benefit of using variables is that if we want to change a color, we only need to change it in one place (here) and it will be reflected everywhere the variable is used.
+*/
+:root {
+  --google-blue: #4285f4;
+  --google-red: #ea4335;
+  --google-yellow: #fbbc04;
+  --google-green: #34a853;
+
+  /* Dark Mode Variables */
+  --bg-body: #202124;
+  --bg-card: #303134;
+  --bg-card-hover: #3c4043;
+  --text-main: #e8eaed;
+  --text-muted: #9aa0a6;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --border-color: #5f6368;
+}
+
+/* Reset and Base Styles */
+/*
+  Here we reset some default browser styles and set base styles for the body and headings.
+
+  Basically, we want every single element on our page to start with no margin or padding, and we want to use the border-box model for box sizing.
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+  On this part, we set the base styles for the body and headings.
+
+  We set the font family to "Roboto", which is a popular Google font, and we set the line height for better readability.
+
+  We also set the text color and background color using the variables we defined earlier.
+
+  Finally, we set the overflow-x property to "hidden", which is used to hide the horizontal scroll bar. 
+*/
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: var(--text-main);
+  background-color: var(--bg-body);
+}
+
+
+/* 
+  TODO: Live Coding Session Styles
+  
+  We will add styles for:
+  - Header
+  - Container
+  - Sections (About, Skills, Projects, Contact)
+  - Footer
+*/
+
+/* Header Section */
+
+
+.corner-img {
+  position: absolute;
+  width: 150px;
+  max-width: 20vw;
+  height: auto;
+}
+
+.corner-img.left {
+  top: 50px;
+  left: 50px;
+}
+
+.corner-img.right {
+  top: 50px;
+  right: 50px;
+}
+
+header {
+  background-color: #202124;
+  padding: 80px 20px;
+  border-bottom: 4px solid #4285f4;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+header p {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+  color: grey;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links a {
+  border: 1px solid var(--border-color);
+  padding: 10px 24px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+
+}
+
+.social-links a:hover {
+  background-color: rgba(54, 54, 54, 0.589);
+  color: var(--google-blue);
+  border-color: var(--google-blue);
+}
+
+
+/* Main Content & Section Styling */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  background-color: var(--bg-card);
+  margin: 30px 0;
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 6px rgb(17, 17, 17);
+
+  transition: border-color 0.3s ease;
+}
+
+section h2 {
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--google-blue);
+}
+
+section:hover {
+  border-color: #5f6368;
+}
+
+/* About Section */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-image {
+  width: 180px;
+  height: 180px;
+  border: 4px solid var(--google-blue);
+  overflow: hidden;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.about-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  padding: 5px;
+}
+
+.about-image:hover img {
+  transform: scale(1.1);
+}
+
+.about-text {
+  flex: 1;
+  color: var(--text-main);
+  font-size: 1.1em;
+}
+
+/* Skills Section */
+
+
+
+/* Projects Section */
+
+
+
+/* Footer */
+
+
+
+/* Back to Top Button */
